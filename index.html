@@ -53,7 +53,7 @@
                 grid-row: 3;
                 grid-column: 1;
                 display: block;
-                z-index: 3;
+                z-index: 3;  
                 
             }
             main{
@@ -111,6 +111,7 @@
                 border-radius: 30px;
                 text-align: center;
                 font-weight: bold;
+                box-shadow: 10px 10px 10px blue;
             }
             nav div:hover{
                 background-color: antiquewhite;
@@ -127,6 +128,18 @@
             .card-star{
                 text-align: center;
             }
+            header nav{
+                display: flex;
+                justify-content:space-around;
+                background-color: aliceblue;
+                color:black ;
+            }
+         .left-nav{
+            position:fixed;
+            margin-top:100px ;
+            width: 200px;
+         }
+
         }
         @media screen and (orientation:portrait){
             body{
@@ -147,6 +160,9 @@
                 font-weight: bold;
                 background-color: black;
                 color: #fff;
+                position: sticky;
+                top: 0px;
+                z-index: 5;
             }
 
             marquee{
@@ -203,6 +219,7 @@
                 border-radius: 30px;
                 text-align: center;
                 font-weight: bold;
+                box-shadow: 10px 10px 10px blue;
             }
             nav div:hover{
                 background-color: antiquewhite;
@@ -228,9 +245,21 @@
     <div class="contain">
         <header>
             <h3>SANDIP MENS WEAR</h3>
+            <nav class="social-123">
+        <span>HOME</span>|
+        <span>KIDS</span>|
+        <span>FORMAL</span>|
+        <span>TRANDING</span>|
+       <span>
+        <span style="color:red" class="bi bi-heart-fill heart" ></span>
+        <span class="bi bi-cart4"></span>
+        <span class="bi bi-person-fill"></span>
+       </span>
+        </nav>
         </header>
+        
        <marquee behavior="alternate" scrollamount="13"> <span class="bi bi-lightning-charge-fill">  </span>50% OFF ON EVERY SUNDAY  <span class="bi bi-lightning-charge-fill"></span></marquee>
-        <nav>
+        <nav class="left-nav">
           <div>HOME</div>
           <div>KIDS</div>
           <div>FORMAL</div>
@@ -322,5 +351,5 @@
         </div>
     </footer>
     </div>
-</body>
+ </body>
 </html>
